@@ -1,5 +1,6 @@
+using System;
 using System.Collections;
-using System.Diagnostics.Eventing.Reader;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DictionaryTest : MonoBehaviour
