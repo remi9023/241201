@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
+
 using UnityEngine;
 
-public class delegateexaample : MonoBehaviour
 public class delegateexample : MonoBehaviour
 {
     //델리게이트 선언
@@ -35,11 +34,11 @@ public class delegateexample : MonoBehaviour
         myDelegate += PrintMessage; // 프린트메시지를 델리게이트에 붙이는것
         myDelegate += LogMessage;   // 로그메시지를 델리게이트에 붙이는 것 즉, 멀티 캐스트
 
-        델리게이트를 사용하여 메서드를 호출
+       // 델리게이트를 사용하여 메서드를 호출
 
         myDelegate("안녕, 멀티캐스트 델리게이트라고 해");
         
-        메서드 제거 후 호출
+        //메서드 제거 후 호출
         myDelegate -= LogMessage;
         myDelegate("로그 메시지 함수 제거하고 호출했어");
 

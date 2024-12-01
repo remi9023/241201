@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Runtime.Remoting.Messaging;
+
 using UnityEngine;
 
 public class EnemyEventTest : MonoBehaviour
@@ -9,14 +8,14 @@ public class EnemyEventTest : MonoBehaviour
     private void onEnable()
     {
         //이벤트 구독
-        PlayerEventTest.OnGameover += RespondToGameOver;
+        PlayerEventTest.OnGameOver += RespondToGameover;
 
     }
 
     private void OnDisable()
     {
         //이벤트 구독해제
-        PlayerEventTest.OnGameOver -= RespondToGameOver;
+        PlayerEventTest.OnGameOver -= RespondToGameover;
     }
 
     void RespondToGameover()
